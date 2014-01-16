@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assign2_Cout", "Assign2_Cout\Assign2_Cout.vcxproj", "{43475F3F-DA0C-4EE8-861D-A78CE2FD90B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43475F3F-DA0C-4EE8-861D-A78CE2FD90B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43475F3F-DA0C-4EE8-861D-A78CE2FD90B0}.Debug|Win32.Build.0 = Debug|Win32
+		{43475F3F-DA0C-4EE8-861D-A78CE2FD90B0}.Release|Win32.ActiveCfg = Release|Win32
+		{43475F3F-DA0C-4EE8-861D-A78CE2FD90B0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
