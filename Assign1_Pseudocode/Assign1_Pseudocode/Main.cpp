@@ -4,7 +4,7 @@
 using namespace std;
 
 int main()
-{
+{	
 	//declare variables/constants for change and denominations
 	double PurchaseAmount = 0.00;
 	double Change = 0.00;
@@ -69,7 +69,7 @@ int main()
 			Change = Change - Nickel;
 			NickelCount++;
 		}
-		while(Change >= .01 && Change < .05)
+		while(Change >= .009 && Change < .05)
 		{
 			Change = Change - Penny;
 			PennyCount++;
@@ -87,6 +87,6 @@ int main()
 		"-1 dollar bills\n" << "\t" << QuarterCount << "-Quarters\n" << "\t" << DimeCount <<
 		"-Dimes\n" << "\t" << NickelCount << "-Nickels\n" << "\t" << PennyCount << "-Pennies\n";
 
-
+	//wait for key press to close
 	_getch();
 }
