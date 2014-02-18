@@ -19,7 +19,7 @@ int main()
 		cout << "Your selection: " << endl;
 		
 		cin >> flavor;
-		//oupu to the user which flavor they selected
+		//ouput to the user which flavor they selected
 		switch(flavor)
 		{
 

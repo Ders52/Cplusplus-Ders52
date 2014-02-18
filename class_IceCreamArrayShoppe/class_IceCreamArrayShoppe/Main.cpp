@@ -24,6 +24,12 @@ int main()
 		cout << "2. Chocolate" << endl;
 		cout << "3. Strawberry" << endl;*/
 		cin >> flavor;
+		cout << "You entered:" << flavor << endl;
+		//clear out the istream after input
+		cin.clear();
+		fflush(stdin);
+
+
 		if (flavor - 1 >= flavorsLengh || flavor - 1 < 0)
 		{
 			cout << "Please enter a valid flavor" << endl;
@@ -32,6 +38,8 @@ int main()
 		{					
 			cout << "You selected: " << flavors[flavor - 1]<< endl;
 		}
+		//cin.clear();
+		//cin.ignore(INT_MAX);
 		
 		
 		
