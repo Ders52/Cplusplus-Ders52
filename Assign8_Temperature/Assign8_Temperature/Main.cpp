@@ -33,7 +33,7 @@ int main()
 			cout << "Please enter degrees fahrenheit to convert to celsius" << endl;
 			cin >> input;
 			//Celsius = (5.0/9.0)*(fahrenheit – 32.0)
-			degreesCels = (5/9) * (input - 32);
+			degreesCels = .555556 * (input - 32);
 
 			cout << input << " degress fahrenheit = " << degreesCels << " degrees celsius" << endl;
 		}
