@@ -1,52 +1,6 @@
-#include "iostream"
-#include "conio.h"
-#include "iomanip"
-#include "string"
-#include "math.h"
+#include "HelperBot.h"
 
-using namespace std;
-
-
-void doNothing();
-bool IsNumeric(string);
-int ConverToInt(string);
-
-int main()
-{
-	doNothing();
-
-	bool quit = false;
-
-	while (!quit)
-	{
-		cout << "Please enter a number:";
-		string input = "";
-		cin >> input;
-		bool success = IsNumeric(input);
-		cout << "Success:" << success << endl;
-		if (success)
-		{
-			cout << "The number is:" << ConverToInt(input) << endl;
-			
-		}
-
-		cout << "Press any key to continue or 'q' to quit" << endl;
-		char c = _getch();
-
-		if (c == 'q' || c == 'Q')
-		{
-			quit = true;
-		}
-	}	
-	return 1;
-}
-
-void doNothing()
-{
-	cout << "Im doing nothing" << endl;
-}
-
-bool IsNumeric(string value)
+bool HelperBot::IsNumeric(string value)
 {
 	//loop through all the characters
 	//check whether they are 0-9
@@ -75,15 +29,12 @@ bool IsNumeric(string value)
 		}
 
 		if (!success) break;
-
-
 	}
-
 
 	return success;
 }
 
-int ConverToInt(string value)
+int HelperBot::ConvertToInt(string value)
 {
 	int total = 0;
 
@@ -117,17 +68,12 @@ int ConverToInt(string value)
 		break;
 	}
 	
-	//number = digit * 10 ^ length - (i + 1)
-	
-	//int number = digit * 10 ^ (value.length() - (i + 1));
 	int number = digit * pow(10, value.length() - (i + 1)); 
 		
 	//add number to total 
 	total += number;
 	
 	}
-	//return total
-
-
+	
 	return total;
 }
