@@ -61,19 +61,19 @@ int main()
 				{
 				case 1:
 
-					cout << endl << Addition(dblnumber1, dblnumber2) << endl;
+					cout << endl << "Answer: " << Addition(dblnumber1, dblnumber2) << endl;
 
 					break;
 
 				case 2:
 
-					cout << endl << Subtraction(dblnumber1, dblnumber2) << endl;
+					cout << endl << "Answer: " << Subtraction(dblnumber1, dblnumber2) << endl;
 
 					break;
 
 				case 3:
 
-					cout << endl << Multiplication(dblnumber1, dblnumber2) << endl;
+					cout << endl << "Answer: " << Multiplication(dblnumber1, dblnumber2) << endl;
 
 					break;
 				
@@ -81,7 +81,7 @@ int main()
 
 					if (dblnumber2 != 0)
 					{
-						cout << endl << Division(dblnumber1, dblnumber2) << endl;
+						cout << endl << "Answer: " << Division(dblnumber1, dblnumber2) << endl;
 					}
 					else
 					{
