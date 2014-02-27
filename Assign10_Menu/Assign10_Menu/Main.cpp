@@ -95,7 +95,7 @@ int main()
 
 					if (dblnumber2 != 0)
 					{
-						cout << endl << Average(dblnumber1, dblnumber2) << endl;
+						cout << "Answer: " << endl << Average(dblnumber1, dblnumber2) << endl;
 					}
 					else
 					{
