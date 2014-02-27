@@ -131,37 +131,55 @@ bool HelperBot::IsNumericInt(string value)
 }
 
 
-bool HelperBot::IsNumeric(string value)
+bool HelperBot::IsNumeric(string s)
 {
-	//loop through all the characters
-	//check whether they are 0-9
-	//if not then return false
-	//if they are, keep checking
 	bool success = true;
-	for (int i = 0; i < value.length(); i++)
+	bool decimal_point_found = false;
+	//start at end of string (1's place).
+	for (int i = s.length() - 1; i >= 0; i--)
 	{
-		//test if the character is a number here
-		switch (value[i])
+		//get the digit
+		char c = s[i];
+		//look for characters 0-9
+		if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4'
+			|| c == '5' || c == '6' || c == '7' || c == '8' || c == '9')
 		{
-		case '0':
-		case '1':
-		case '2':
-		case '3':
-		case '4':
-		case '5':
-		case '6':
-		case '7':
-		case '8':
-		case '9':
-			break;
-		default:
-			success = false;
-		
+			success = true;
 		}
-
-		if (!success) break;
+		else if (c == '.')
+		{
+			if (!decimal_point_found)
+			{
+				decimal_point_found = true;
+			}
+			else
+			{
+				//if decimal point found already, then not a valid number
+				success = false;
+			}
+			//if decimal is at end of string not valid number
+			if (i == s.length() - 1)
+			{
+				success = false;
+			}
+		}
+		else if (c == '-')
+		{
+			if (i > 0)
+			{
+				success = false;
+			}
+		}
+		else
+		{
+			//if 0-9 not found then set success to false and break from for loop
+			success = false;
+		}
+		if (!success)
+		{
+			break;
+		}
 	}
-
 	return success;
 }
 
