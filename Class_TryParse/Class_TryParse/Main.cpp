@@ -6,13 +6,27 @@
 
 using namespace std;
 
+bool TryParse(string, int&);
+
 int main()
 {
 	bool quit = false;
 
 	while (!quit)
 	{
-		cout << "Test: " << HelperBot::IsNumeric("blah");
+		cout << "Please enter a number: ";
+		string user_input = "";
+		int number = 0;
+		cin >> user_input;
+
+		if(TryParse(user_input, number))
+		{
+			cout << "You entered: " << number << endl;
+		}
+		else 
+		{
+			cout << endl << "That is not a number" << endl;
+		}
 
 		char c = _getch();
 		if (c == 'q' || c == 'Q')
@@ -24,4 +38,17 @@ int main()
 	
 
 	return 1;
+}
+
+bool TryParse(string input, int& value)
+{
+	bool success = HelperBot::IsNumeric(input);
+
+	if(success)
+	{
+		value = HelperBot::ConvertToInt(input);
+	}
+	
+
+	return success;
 }
