@@ -6,6 +6,8 @@
 
 using namespace std;
 
+bool TryParse(string input, double& value);
+
 int main()
 {
 	bool quit = false;
@@ -24,4 +26,18 @@ int main()
 	
 
 	return 1;
+}
+
+//fuction to determine numeric value and convert to a double
+bool TryParse(string input, double& value)
+{
+	bool success = HelperBot::IsNumeric(input);
+
+	if(success)
+	{
+		value = HelperBot::ConvertToDouble(input);
+	}
+	
+
+	return success;
 }
