@@ -13,7 +13,13 @@ int main()
 
 	const int kNumbersLength = 5;
 	int numbers[kNumbersLength][kNumbersLength];
-	
+	string firstNames[] = {"rick", "jeff", "matt"};
+	string lastNames[][3] = {
+		{"thompson", "smith", "roberts"},
+		{"jackson", "mcdonald", "skywalker"},
+		{"weber", "callahan", "schultz"}
+	};
+
 
 	int num = 99;
 
