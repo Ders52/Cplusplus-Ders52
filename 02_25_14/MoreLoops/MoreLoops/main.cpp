@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <conio.h>
 #include <string>
-#include "..\..\..\02_20_14\HelperClass\HelperClass\HelperBot.h"
+#include "..\..\..\Class_HelperClass\Class_HelperClass\HelperBot.h"
 using namespace std;
 
 void forLoopTest();
@@ -12,7 +12,6 @@ void doWhileLoopTest();
 
 int main()
 {
-	HelperBot::SetConsole();
 
 	bool quit = false;
 	while(!quit)

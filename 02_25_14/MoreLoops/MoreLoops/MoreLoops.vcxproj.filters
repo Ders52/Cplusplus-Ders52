@@ -18,12 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\02_20_14\HelperClass\HelperClass\HelperBot.cpp">
+    <ClCompile Include="..\..\..\Class_HelperClass\Class_HelperClass\HelperBot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\02_20_14\HelperClass\HelperClass\HelperBot.h">
+    <ClInclude Include="..\..\..\Class_HelperClass\Class_HelperClass\HelperBot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
