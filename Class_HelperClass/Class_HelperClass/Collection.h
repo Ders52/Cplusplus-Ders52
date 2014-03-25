@@ -19,4 +19,6 @@ public:
 	int GetValue(int index);
 	//adds a value to the end
 	void Add(int value);
+	friend ostream& operator<<(ostream &out, Collection &c);
+	int operator[](int);
 };

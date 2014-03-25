@@ -5,15 +5,17 @@
 	Collection::Collection()
 	{
 		//set the length to 1
-		_length = 1;
+		_length = 0;
 		//create a new array of length 1
 		_data = new int[_length];
 		//initialize the array
-		_data[0] = 0;
+		//_data[0] = 0;
 	}
 	//destructor
 	Collection::~Collection()
 	{
+		//frees up memory when instance variable leaves scope
+		delete[] _data;
 	}
 	//getter for the private _length
 	int Collection::Length()
@@ -30,8 +32,37 @@
 	void Collection::Add(int value)
 	{
 		//declare new array of _length + 1
+		int *temp = new int [_length + 1];
 		//copy old elements in new array
+		for(int i = 0; i < _length; i++)
+		{
+			temp[i] = _data[i];
+		}		
 		//add new value to end of new array
+		temp[_length] = value;
 		//delete old array to free up memory
+		delete[] _data;
 		//point _data to new array
+		_data = temp;
+		_length++;
+	}
+
+	ostream& operator<<(ostream &out, Collection &c)
+	{
+		out << "{";
+		for (int i = 0; i < c.Length(); i++)
+		{
+			if (i > 0) cout << ",";
+		
+			out << c[i];
+		}
+		out << "}" << endl;
+
+		return out;
+
+	}
+
+	int Collection::operator[](int index)
+	{
+		return _data[index];
 	}
