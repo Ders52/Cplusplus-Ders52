@@ -7,11 +7,43 @@
 
 using namespace std;
 
-void tempCollectionTest();
+//void tempCollectionTest();
+
+struct Student
+{
+	string FirstName;
+	string LastName;
+	int Credits;
+};
+
 
 int main()
 {
-	Collection c;
+	Student jeff;
+	jeff.FirstName = "Jeff";
+	jeff.LastName = "Richards";
+	jeff.Credits = 27;
+
+
+	Collection<Student> students;
+	students.Add(jeff);
+
+	for(int i = 0; i < students.Length(); i++)
+	{
+		Student tempStudent = students[i];
+		cout << tempStudent.LastName << ", " << tempStudent.LastName << endl; 
+	}
+
+	Collection<string> names;
+	names.Add("Austin");
+	names.Add("Ryan");
+	names.Add("Brett");
+	names.Add("Hosey");
+	names.Add("Jake");
+
+	cout << "Names: " << names << endl;
+
+	Collection<int> c;
 	c.Add(5);
 	c.Add(7);
 	c.Add(11);
@@ -46,12 +78,13 @@ int main()
 	return 1;
 }
 
-void tempCollectionTest()
-{
-	Collection temp;
-	for(int i =0; i < 50; i++)
-	{
-		temp.Add(55);
-	}
-}
+//memory leak method
+//void tempCollectionTest()
+//{
+//	Collection<int> temp;
+//	for(int i =0; i < 50; i++)
+//	{
+//		temp.Add(55);
+//	}
+//}
 
