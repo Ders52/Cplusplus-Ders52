@@ -13,7 +13,7 @@ bool TryParse(string input, double& value);
 struct Employee
 {
 	string FirstName;
-	string LastName;
+	int Number;
 	double hours;
 	double rate;
 };
@@ -45,11 +45,10 @@ int main()
 				Employee tempEmployee;
 				string input = "";
 
-				cout << "First Name: ";
-				cin >> tempEmployee.FirstName;
+				tempEmployee.Number = 1111 * (i + 1);
 
-				cout << "Last Name: ";
-				cin >> tempEmployee.LastName;
+				cout << "Name: ";
+				cin >> tempEmployee.FirstName;
 								
 				do
 				{
@@ -69,13 +68,22 @@ int main()
 			}
 		
 			//display in a table all the employee info entered and their gross pay
-			cout << endl << "First Name" << setw(10) << "Last Name" << setw(10) << "Rate" << setw(10) << "Hours" << setw(10) << "Gross Pay" << endl;
+			cout << endl << right << 
+				setw(10) << "Number" << 
+				setw(10) << "Name" << 
+				setw(10) << "Rate" << 
+				setw(10) << "Hours" << 
+				setw(10) << "Gross Pay" << endl;
 
 			for(int i = 0; i < employees.Length(); i++)
 			{
 				cout << setprecision(2) << fixed;
-				cout << right << setw(10) << employees[i].FirstName << setw(10) << employees[i].LastName << setw(10) << employees[i].rate << setw(10) << 
-				employees[i].hours << setw(10) << employees[i].rate * employees[i].hours << endl;
+				cout << setw(10) << right << 
+					setw(10) << employees[i].Number << 
+					setw(10) << employees[i].FirstName << 
+					setw(10) << employees[i].rate << 
+					setw(10) << employees[i].hours << 
+					setw(10) << employees[i].rate * employees[i].hours << endl;
 			}
 		}
 		else
