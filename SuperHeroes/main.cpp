@@ -9,7 +9,7 @@ int main()
                 "Super Soldier Serum",
                 "Steve Rogers",
                 95);
-    //s.seT_name("Captain America");
+    //s.set_name("Captain America");
     cout << s << endl;
     s.RevealSecretID();
     cout << "After Reveal: " << s << endl;
