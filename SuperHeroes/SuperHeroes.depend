@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1397579164 source:/home/student/Cplusplus-Ders52/HelperBot/Collection.cpp
+
+1397578387 source:/home/student/Cplusplus-Ders52/HelperBot/HelperBot.cpp
+	"HelperBot.h"
+	<math.h>
+	<stdio.h>
+
+1397578122 /home/student/Cplusplus-Ders52/HelperBot/HelperBot.h
+	<string>
+
+1397753619 source:/home/student/Cplusplus-Ders52/SuperHeroes/main.cpp
+	<iostream>
+	"SuperHero.h"
+
+1397753733 source:/home/student/Cplusplus-Ders52/SuperHeroes/SuperHero.cpp
+	"SuperHero.h"
+	<string>
+
+1397752868 /home/student/Cplusplus-Ders52/SuperHeroes/SuperHero.h
+	<iostream>
+

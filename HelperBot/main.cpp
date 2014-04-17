@@ -15,10 +15,9 @@ int main()
     c.Add(2);
     c.Add(3);
 
-    cout << "c:" << c << endl;
-
-
     cout << value;
+
+    cout << "c:" << c << endl;
 
     return 0;
 }
