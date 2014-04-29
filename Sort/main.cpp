@@ -1,6 +1,6 @@
 #include <iostream>
-#include "HelperBot.h"
-#include "Collection.h"
+#include "../HelperBot/HelperBot.h"
+#include "../HelperBot/Collection.h"
 
 using namespace std;
 
