@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../HelperBot/HelperBot.h"
 #include "../HelperBot/Collection.h"
+#include "../SuperHeroes/SuperHero.h"
 
 using namespace std;
 
@@ -10,9 +11,28 @@ void linearSort(int*,int);
 void bubbleSort(int*,int);
 
 
-
 int main()
 {
+    Collection<SuperHero> s;
+
+    s.Add(("hulk", "smash", "bruce banner", 37, 1000));
+    s.Add(("batman", "gadgets", "bruce wayne", 40, 300));
+    s.Add(("iron man", "suit", "tony stark", 45, 400));
+    s.Add(("captain america", "super soldier serum", "steve rogers", 30, 400));
+
+    s.Sort();
+
+    cout << s << endl;
+    return 0;
+
+
+}
+
+/*int main()
+{
+
+
+
     int a = 5;
     int b = 3;
     a = a + b;
@@ -40,7 +60,7 @@ int main()
     //bubbleSort(numbers, 5);
 
     return 0;
-}
+}*/
 
 void swap(int a,int b,int* numbers)
 {

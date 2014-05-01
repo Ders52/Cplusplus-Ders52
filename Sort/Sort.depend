@@ -12,3 +12,10 @@
 1398788470 source:/home/student/Cplusplus-Ders52/Sort/main.cpp
 	<iostream>
 
+1398961290 source:/home/student/Cplusplus-Ders52/SuperHeroes/SuperHero.cpp
+	"SuperHero.h"
+	<string>
+
+1398961290 /home/student/Cplusplus-Ders52/SuperHeroes/SuperHero.h
+	<iostream>
+

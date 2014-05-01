@@ -11,11 +11,12 @@ private:
     string _name;
     string _power;
     string _secret;
+    int _powerLevel;
     int _age;
 public:
 
     SuperHero();
-    SuperHero(string,string,string,int);
+    SuperHero(string,string,string,int,int);
     //~SuperHero();
     //getters
     string name();
@@ -27,8 +28,11 @@ public:
     void set_power(string);
     void set_secret(string);
     void set_age(int);
+    void set_powerLevel(int);
     void RevealSecretID();
     friend ostream& operator<<(ostream&, SuperHero&);
+    friend bool operator>(SuperHero&, SuperHero&);
+    friend bool operator<(SuperHero&, SuperHero&);
 };
 
 #endif // SUPERHEROE_H_INCLUDED
