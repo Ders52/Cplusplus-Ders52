@@ -39,6 +39,18 @@ bool operator<(SuperHero& hero1, SuperHero& hero2)
 {
     return (hero1._powerLevel > hero2._powerLevel);
 }
+
+bool operator==(SuperHero& hero1, SuperHero& hero2)
+{
+    return (hero1._powerLevel == hero2._powerLevel);
+}
+
+void operator=(SuperHero& hero1, SuperHero& hero2)
+{
+    hero1._name = hero2._name;
+    hero1._powerLevel = hero2._powerLevel;
+}
+
 //getters
 string SuperHero::name()
 {

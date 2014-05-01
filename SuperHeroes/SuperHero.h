@@ -33,6 +33,8 @@ public:
     friend ostream& operator<<(ostream&, SuperHero&);
     friend bool operator>(SuperHero&, SuperHero&);
     friend bool operator<(SuperHero&, SuperHero&);
+    friend bool operator==(SuperHero&, SuperHero&);
+    friend void operator=(SuperHero&, SuperHero&);
 };
 
 #endif // SUPERHEROE_H_INCLUDED

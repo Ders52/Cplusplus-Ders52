@@ -15,10 +15,10 @@ int main()
 {
     Collection<SuperHero> s;
 
-    s.Add(("hulk", "smash", "bruce banner", 37, 1000));
-    s.Add(("batman", "gadgets", "bruce wayne", 40, 300));
-    s.Add(("iron man", "suit", "tony stark", 45, 400));
-    s.Add(("captain america", "super soldier serum", "steve rogers", 30, 400));
+    s.Add("hulk", "smash", "bruce banner", 37, 1000);
+    s.Add("batman", "gadgets", "bruce wayne", 40, 300);
+    s.Add("iron man", "suit", "tony stark", 45, 400);
+    s.Add("captain america", "super soldier serum", "steve rogers", 30, 400);
 
     s.Sort();
 

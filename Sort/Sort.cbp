@@ -37,6 +37,8 @@
 		<Unit filename="../HelperBot/HelperBot.cpp" />
 		<Unit filename="../HelperBot/HelperBot.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="../SuperHeroes/SuperHero.cpp" />
+		<Unit filename="../SuperHeroes/SuperHero.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
