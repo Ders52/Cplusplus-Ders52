@@ -21,9 +21,9 @@ int main()
 		string inner = "";
 
 		
-		int j = 8;
+		int j = 9;
 
-		for(int i = 0; i < 9; i++)
+		for(int i = 0; i < 10; i++)
 		{			
 			
 
